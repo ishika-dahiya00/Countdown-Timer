@@ -88,3 +88,21 @@ display: flex;
         opacity: 1;
     }
 }
+
+@media  screen and (max-width:600px) {
+    .content p{
+        font-size: 20px;
+    }
+
+    .content h1{
+        font-size: 50px;
+    }
+
+    .launch-time div p{
+        font-size: 40px;
+    }
+
+    .launch{
+        width: 200px;
+    }
+}
