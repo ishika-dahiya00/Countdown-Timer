@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('background.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+}
+
+.container .logo {
+    color: #fff;
+    font-size: 80px;
+    width: 120px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.content{
+    top: 50%;
+    position: absolute;
+    color: #fff;
+    transform: translateY(-50%);
+}
+
+.content p {
+    font-size: 28px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.content h1{
+    font-size: 60px;
+}
+
+.content button{
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    margin: 12px 0;
+    padding: 12px 20px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.content button i{
+    margin-left: 10px;
+}
+
+.launch-time{
+display: flex;
+}
+
+.launch-time div{
+    flex-basis: 100px;
+}
+
+.launch-time div p{
+    font-size: 60px;
+    margin-bottom: -14px;
+}
+
+.launch{
+    width: 225px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: launch 4s linear infinite;
+}
+
+@keyframes launch {
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 100%;
+        opacity: 1;
+    }
+}
